@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.switch {
+  appearance: none;
+  background-color: #cfd8ef;
+  height: 22px;
+  width: 35px;
+  display: inline-flex;
+  margin: 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 4px;
+  color: #848ead;
+}
+
+.switch:after {
+  content: "";
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.switch:checked {
+  background-color: #7aeadf;
+  justify-content: end;
+}
+
+.container {
+  background-color: #f1f5fe;
+  background-image: url(../images/bg-image.svg);
+  background-repeat: no-repeat;
+  background-position: center 57px;
+  border-bottom-left-radius: 191px;
+  
+  height: 400px;
+}
+
+.slider-card {
+  background-color: white;
+  box-shadow: 0px 20px 30px -5px #7f89b927;
+  border-radius: 8px;
+  margin-inline: 24px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  margin-bottom: 50px;
+}
+
+.features {
+  border-top: 1px solid #ecf0fb;
+  padding-top: 24px;
+  margin-top: 38px;
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 32px;
+}
+
+.features li {
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.39px;
+  text-align: center;
+  color: #848ead;
+  display: flex;
+  justify-content: center;
+}
+
+.features img {
+  margin-right: 16px;
+}
+
+h5 {
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27.32px;
+  text-align: center;
+}
+
+.slider-top-text {
+  padding-top: 89px;
+  padding-bottom: 64px;
+}
+
+.slider-top-text p {
+  font-family: "Manrope";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  color: #848ead;
+  max-width: 180px;
+  margin-inline: auto;
+  margin-top: 8px;
+}
+
+h6 {
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16.39px;
+  letter-spacing: 1.7142857313156128px;
+  text-align: center;
+  color: #848ead;
+}
+
+.slider-part {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 24px;
+  margin-top: 41px;
+}
+
+.fiyatTxt {
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 43.71px;
+  letter-spacing: -0.800000011920929px;
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+
+.aylikYillikTxt {
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.39px;
+  text-align: center;
+  color: #848ead;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-inline: auto;
+}
+
+.startBtn button {
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16.39px;
+  text-align: center;
+  color: #becdff;
+  background-color: #293356;
+  border: none;
+  border-radius: 20.5px;
+  padding: 12px 46px;
+}
+
+.startBtn {
+  display: flex;
+  justify-content: center;
+}
+
+@media (width >= 1440px) {
+  .slider-card {
+    width: 540px;
+    margin-inline: auto;
+  }
+}

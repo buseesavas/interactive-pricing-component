@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing Component</title>
+    <script src="assets/js/interactive.js" defer></script>
+    <link rel="stylesheet" href="assets/css/interactive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider-top-text">
+        <h5>Simple, traffic-based pricing</h5>
+        <p>Sign-up for our 30-day trial. 
+          No credit card required. </p>
+      </div>
+      <div class="slider-card">
+        <h6><span id="pageviews">100K</span> PAGEVIEWS</h6>
+        <div class="slider-part">
+          <input
+        class="slider"
+        type="range"
+        min="10"
+        max="200"
+        step="10"
+        value="100"
+        id="slider"
+      />
+      <p class="fiyatTxt" id="fiyatTxt"></p>
+      <label class="aylikYillikTxt"
+        >Monthly Billing
+        <input class="switch" type="checkbox" id="yillikOdeme" /> Yearly Billing</label
+      >
+        </div>
+        <ul class="features">
+          <li><img src="assets/images/tick-blue.svg" alt=""> Unlimited websites</li>
+          <li><img src="assets/images/tick-blue.svg" alt=""> 100% data ownership </li>
+          <li><img src="assets/images/tick-blue.svg" alt=""> Email reports</li>
+        </ul>
+        <div class="startBtn">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
